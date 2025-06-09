@@ -9,7 +9,7 @@ import (
 )
 
 func Init() {
-	err := godotenv.Load("go.env")
+	err := godotenv.Load(".env")
 	if err != nil {
 		log.Println("No .env file found")
 	}
